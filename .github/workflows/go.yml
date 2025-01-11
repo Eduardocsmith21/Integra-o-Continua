@@ -28,6 +28,9 @@ jobs:
     - name: Build-DB
       run: docker-compose build
 
+    - name: Teste
+      run: go test -v main_test.go
+
 
   build:
     needs: test
